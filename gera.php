@@ -179,7 +179,7 @@
 		</body>
 	</html>';
 
-	//echo $pdf_html;
-	require_once("inc/geraPDF.php");
+	echo $pdf_html;
+	//require_once("inc/geraPDF.php");
 	//require_once('inc/config.php');
 ?>
