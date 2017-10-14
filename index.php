@@ -3,18 +3,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<meta charset="UTF-8">
 			
-			<script type="text/javascript" src="../curriculo/design/jquery.js"></script>
-			<script type="text/javascript" src="../curriculo/design/js/function.js"></script>
-			<script src="../curriculo/design/jquery/3.1.js"></script>
+			<script type="text/javascript" src="design/jquery.js"></script>
+			<script type="text/javascript" src="design/js/function.js"></script>
+			<script src="design/jquery/3.1.js"></script>
 		
-			<script src="../curriculo/design/bootstrap/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js"></script>
-			<script src="../curriculo/design/bootstrap/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
-			<link rel="stylesheet" href="../curriculo/design/bootstrap/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.css"/>
+			<script src="design/bootstrap/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js"></script>
+			<script src="design/bootstrap/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+			<link rel="stylesheet" href="design/bootstrap/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.css"/>
 
-			<link rel="stylesheet" type="text/css" href="../curriculo/design/bootstrap/themes/paper.min.css">
-			<link rel="stylesheet" type="text/css" href="../curriculo/design/style.css">
+			<link rel="stylesheet" type="text/css" href="design/bootstrap/themes/paper.min.css">
+			<link rel="stylesheet" type="text/css" href="design/style.css">
 
-			<script type="text/javascript"  src="../curriculo/design/bootstrap/js/bootstrap.min.js"></script>
+			<script type="text/javascript"  src="design/bootstrap/js/bootstrap.min.js"></script>
 	<div class="container-fluid">
 		
 		
