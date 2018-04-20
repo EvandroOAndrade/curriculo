@@ -3,23 +3,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<meta charset="UTF-8">
 			
-			<script type="text/javascript" src="design/jquery.js"></script>
-			<script type="text/javascript" src="design/js/function.js"></script>
-			<script src="design/jquery/3.1.js"></script>
-		
-			<script src="design/bootstrap/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js"></script>
-			<script src="design/bootstrap/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
-			<link rel="stylesheet" href="design/bootstrap/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.css"/>
+			<script type="text/javascript" src="../curriculo/design/jquery.js"></script>
+			<script src="../curriculo/design/jquery/3.1.js"></script>
 
-			<link rel="stylesheet" type="text/css" href="design/bootstrap/themes/paper.min.css">
-			<link rel="stylesheet" type="text/css" href="design/style.css">
+			<script src="../curriculo/design/bootstrap/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.js"></script>
+			<script src="../curriculo/design/bootstrap/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+			<link rel="stylesheet" href="../curriculo/design/bootstrap/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker3.css"/>
 
-			<script type="text/javascript"  src="design/bootstrap/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="../curriculo/design/bootstrap/themes/paper.min.css">
+			<link rel="stylesheet" type="text/css" href="../curriculo/design/style.css">
+
+			<script type="text/javascript"  src="../curriculo/design/bootstrap/js/bootstrap.min.js"></script>
 	<div class="container-fluid">
 		
 		
-	<form class="form-horizontal" action="gera.php" method="post" id="formulario">
+	<form class="form-horizontal" action="gera.php" method="post" enctype="multipart/form-data" id="formulario">
 	<fieldset>
+
+	<legend>Foto de Perfil</legend>
+	<div class="form-group">
+		<label class="col-md-4 control-label" for="Foto 3x4">Foto 3x4:</label>
+
+		<div class="col-md-4">
+			<input type="file" name="foto">
+		</div>
+	</div>	
 
 	<!-- Form Name -->
 	<legend>Dados Pessoais</legend>
@@ -37,7 +45,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="idade">Idade:</label>  
 	  <div class="col-md-4">
-	  <input id="idade" name="idade" placeholder="Idade" class="form-control input-md" type="number">
+	  <input id="idade" name="idade" placeholder="Idade" class="form-control input-md" type="text">
 	    
 	  </div>
 	</div>
@@ -98,7 +106,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="email">E-mail:</label>  
 	  <div class="col-md-4">
-	  <input id="email" name="email" placeholder="E-mail" class="form-control input-md" type="email">
+	  <input id="email" name="email" placeholder="E-mail" class="form-control input-md" type="text">
 	  <!--<span class="help-block">help</span>  -->
 	  </div>
 	</div>
@@ -129,9 +137,9 @@
 			<option value="PR">PR</option>
 			<option value="RJ">RJ</option>
 			<option value="RN">RN</option>
+			<option value="RS">RS</option>
 			<option value="RO">RO</option>
 			<option value="RR">RR</option>
-			<option value="RS">RS</option>
 			<option value="SC">SC</option>
 			<option value="SE">SE</option>
 			<option value="SP">SP</option>
@@ -164,7 +172,7 @@
 	<div class="form-group">
 	  <label class="col-md-4 control-label" for="formacao">Formação Acadêmica:</label>
 	  <div class="col-md-4">                     
-	    <textarea class="form-control" id="formacao" name="formacao" placeholder="Digite sua formação e logo abaixo onde cursou..."></textarea>
+	    <textarea class="form-control" id="formacao" name="formacao" placeholder="Sua formação: Digite sua formação e logo abaixo onde cursou..."></textarea>
 	  </div>
 	</div>
 

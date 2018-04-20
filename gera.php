@@ -1,4 +1,28 @@
 <?php
+
+	$erro = $config = array();
+
+	if(isset($_FILES['foto']))
+	{
+
+		$extensao = strtolower(substr($_FILES['foto']['name'], -4));
+		$novo_nome = md5(time()) . $extensao;
+		$diretorio = "imagens/";
+
+		move_uploaded_file($_FILES['foto']['tmp_name'], $diretorio.$novo_nome);
+
+
+	}
+
+	if(sizeof($erro))
+	{
+		foreach ($erro as $err)
+		{
+			echo " - " .$err . "<BR>";
+		}
+
+	}
+
 	$nome = $_POST["nome"];
 	$idade = $_POST["idade"];
 	$civil = $_POST["civil"];
@@ -98,6 +122,10 @@
 		
 		$pdf_html.='
 			<h1>CURR&Iacute;CULO</h1>
+			<h2>FOTO</H2>
+			<p align="left">
+				<img align="left" width="150px" height="150px" src="imagens/'.$novo_nome.'" />
+			</p>
 			<h2>DADOS PESSOAIS</h2>
 			<p align="left">
 				<b>Nome Completo: </b>'.utf8_decode($nome).'
@@ -179,7 +207,8 @@
 		</body>
 	</html>';
 
-	echo $pdf_html;
-	//require_once("inc/geraPDF.php");
+	//echo $pdf_html;
+	require_once("inc/geraPDF.php");
+	unlink($novo_nome);
 	//require_once('inc/config.php');
 ?>
