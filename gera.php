@@ -1,6 +1,6 @@
 <?php
 
-	$erro = $config = array();
+	/*$erro = $config = array();
 
 	if(isset($_FILES['foto']))
 	{
@@ -21,7 +21,7 @@
 			echo " - " .$err . "<BR>";
 		}
 
-	}
+	}*/
 
 	$nome = $_POST["nome"];
 	$idade = $_POST["idade"];
@@ -122,10 +122,7 @@
 		
 		$pdf_html.='
 			<h1>CURR&Iacute;CULO</h1>
-			<h2>FOTO</H2>
-			<p align="left">
-				<img align="left" width="150px" height="150px" src="imagens/'.$novo_nome.'" />
-			</p>
+			
 			<h2>DADOS PESSOAIS</h2>
 			<p align="left">
 				<b>Nome Completo: </b>'.utf8_decode($nome).'

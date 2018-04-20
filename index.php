@@ -20,14 +20,14 @@
 	<form class="form-horizontal" action="gera.php" method="post" enctype="multipart/form-data" id="formulario">
 	<fieldset>
 
-	<legend>Foto de Perfil</legend>
+	<!--<legend>Foto de Perfil</legend>
 	<div class="form-group">
 		<label class="col-md-4 control-label" for="Foto 3x4">Foto 3x4:</label>
 
 		<div class="col-md-4">
 			<input type="file" name="foto">
 		</div>
-	</div>	
+	</div>	-->
 
 	<!-- Form Name -->
 	<legend>Dados Pessoais</legend>
